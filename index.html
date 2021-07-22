@@ -1,1 +1,544 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <title>Ahmad Wajid's Profolio</title>
+    <script src="https://kit.fontawesome.com/26805d221e.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body id='home'>
+    <!-- navbar -->
+    <nav id="navbar">
+      <h2><a href="#home"><span class="text-primary">Ahmad </span>Wajid</a></h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Projects</a></li>
+        <li><a href="#testimonials">Programs</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!--<li><a href="https://www.google.com"><i class="fab fa-facebook-f" <="" i="" aria-hidden="true"></i></a></li>-->
+      </ul>
+    </nav>
+    <!-- My stuff -->
+    <header id="showcase">
+      <div class="showcase-content">
+        <div class="container">
+          <h1>Ahmad  Wajid's <br> <span class="text-primary">Profolio</span></h1>
+          <a href="#about" class='btn'>Learn More About Me! </a>
+        </div>
+      </div>
+    </header>
+    <!-- Section: About -->
+    <section id="about">
+      <div class="container">
+        <h2 class="about-heading">Get to Know <span class="text-primary"> Me</span></h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>A little bit <span class="text-primary"> About Myself</span></h3>
+            <p class="lead">I have a great interest in technology, business, and in medical career fields. In the past years, I have attained many skills in the technology field. I am very skilled Microsoft Office Applications,  video editing, Python programming, and I am a very fast typist (70-100 wpm). I also have a great interest in the business field. Some crucial skills are communication, leadership, and problem-solving in the business field. I have been able to become skilled in these skills through the different opportunities I took advantage of throughout my past school years.</p>
+        </div>
+        <div class="about-image">
+          <img src="data:image/jpeg;base64,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" alt="Picture of Myself">
+        </div>
+      </div>
+    </section>
+    <!-- Section: Services -->
+    <section id="services" class="bg-light">
+      <div class="container">
+        <h2>Here is What <span class="text-primary">I Have Done</span></h2>
+        <div class="boxes">
+          <div class="box">
+            <h3><span class="text-primary">Built a Multifunction Discord Bot</span></h3>
+            <div class="feature">
+              <i class="fas fa-check"></i> Math Solver (Calculator)
+            </div>
+            <div class="feature">
+              <i class="fas fa-check"></i> Generates Quotes 
+            </div>
+            <div class="feature">
+              <i class="fas fa-check"></i> Generate random Fun Facts 
+            </div>
+          </div>
+        <div class="box">
+            <h3><span class="text-primary">Website Developer/Designer</span></h3>
+            <div class="feature">
+              <br><br><i class="fas fa-check"></i>Built Websites with HTML, CSS, JS 
+            </div>
+            <div class="feature">
+              <i class="fas fa-check"></i>Recognized by District Board of Trustee
+            </div>
+            <div class="feature">
+              <i class="fas fa-check"></i> School Plastic Polution Website
+            </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2><span class="text-primary"></span></h2>
+        <div class="boxes">
+          <div class="box">
+            <h3><span class="text-primary">Built an Ebay Scraper with Python</span></h3>
+            <div class="feature">
+              <i class="fas fa-check"></i>Built a Ebay Discord Bot
+            </div>
+            <div class="feature">
+              <i class="fas fa-check"></i>Finds Average prices for item 
+            </div>
+            <div class="feature">
+              <i class="fas fa-check"></i>Scraper via Python Flask (Website) 
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Section: Testimonials -->
+    <section id="testimonials">
+      <div class="testimonials-bg">
+        <div class="container">
+          <h2>Programs I <span class="text-primary">Took Part of </span></h2>
+          <div class="boxes">
+            <div class="box">
+              <img src="https://pbs.twimg.com/profile_images/1305596812347072513/6Yj4rI1d_400x400.jpg" alt="GearUp">
+              <p><span class="text-name">GEAR UP at CSUF |</span> Took part in Gear Up at California State University, Fullerton. I learned about space, had the opportunity to launch our group rockets, and learn more about space at the Griffith Observatory and the California Science Center.</p>
+            </div>
+            <div class="box">
+              <img src="https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="Person 2">
+              <p>Something</p>
+            </div>
+            <div class="box">
+              <img src="https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="Person 3">
+              <p>Something</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Contact -->
+    <section id="contact" class="bg-light">
+      <div class="container">
+        <h2>Cotact <span class="text-primary">Me </span> Here</h2>
+        <div class="form-container">
+          <div class="mail-icon"><i class="fas fa-envelope"></i></div>
+          <div class="form-box">
+            <h3>Send Me an <span class="text-primary">Email</span></h3>
+            <form action="mailto:cwajid.ahmad@gmail.com" method="POST">
+              <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" placeholder="Enter Your First Name">
+              </div>
+              <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" placeholder="Enter Your Last Name">
+              </div>
+              <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" placeholder="Enter Your Email">
+              </div>
+              <div class="form-group">
+              <label for="message">Message</label>
+              <textarea rows='7' placeholder="Enter Your Message"></textarea>
+              </div>
+              <input type="submit" value="Click Here" class='contact-btn'> 
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class='bg-dark'>
+      <p>Copyright &copy; Ahmad Wajid 2020</p>
+    </footer>
+    <style>
+      /* General style */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.text-primary {
+  color: #C96C00;
+
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+/* Navbar*/
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #005DC9;
+  color: #fff;
+  padding: 1.5rem 8rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 5px solid #C96C00;
+  
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar h2 a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#navbar li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#navbar li a:hover {
+  background-color: #C96C00
+}
+
+/* Information */
+#showcase {
+  background: url(https://pbs.twimg.com/media/EczUP4cXoAMoLr1?format=jpg&name=large) no-repeat center center/cover;
+  height: 91.7vh;
+
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 81px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .6);
+  color: #fff;
+
+}
+
+.showcase-content h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+
+}
+
+.showcase-content .btn {
+  font-size: 1.5rem;
+  padding: 1rem 10rem;
+  transition: color 0.3s, background 0.4s, font-size .5s;
+}
+
+.showcase-content .btn:hover {
+  background: #C96C00;
+  color: #fff;
+  font-size: 200%;
+
+}
+
+.btn {
+  color: #C96C00;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid #C96C00;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* Section : About */
+#about {
+  padding: 5rem 0;
+  background: black;
+
+}
+
+#about h2 , #services h2{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  transition: color .5s
+
+}
+#about h2:hover , #services h2:hover{
+  color: #005DC9;
+
+}
+#about h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#about p.lead {
+  margin-bottom: 1rem;
+  line-height: 2;
+
+}
+
+#about .about-content {
+  display: flex;
+}
+
+#about .about-text,
+#about .about-image {
+  flex: 1;
+}
+
+#about .about-text {
+  text-align: justify;
+
+}
+
+#about .about-image img {
+  display: block;
+  margin-left: auto;
+  width: 75%;
+  border-radius: 100%;
+  margin-top: 60px;
+  border: solid white 10px;
+  cursor: pointer;
+  transition: border-color .5s;
+}
+#about .about-image img:hover {
+  border-color: #005DC9;
+}
+/* Section: Services */
+#services {
+  padding: 5rem 0;
+
+}
+
+#services h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+#services .boxes {
+  display: flex;
+}
+
+#services .box {
+  background: #fff;
+  flex: 1;
+  padding: 2rem;
+  margin: 0 3rem;
+  border-radius: 16px;
+  box-shadow: 2px 2px 5px #d1d1d1;
+}
+
+#services .box i {
+  color: white;
+  padding: 1rem;
+  background: #005DC9;
+  border-radius: 50%;
+  margin: 10px;
+  margin-bottom: 2rem;
+}
+
+/* Section : Testimonials */
+#testimonials {
+  background: url(https://images.wallpaperscraft.com/image/blue_background_color_153514_300x168.jpg) no-repeat center center/cover;
+  height: 120vh;
+}
+
+.testimonials-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .6);
+  padding: 5rem 0;
+}
+
+#testimonials h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+#testimonials .boxes {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#testimonials .box {
+  background: rgba(54, 147, 255, .7);
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  border-radius: 15px;
+}
+
+#testimonials .box:first-child, #testimonials .box:nth-child(2) {
+  margin-bottom: 3rem;
+}
+
+#testimonials .box img {
+  border-radius: 50%;
+  margin-right: 2rem;
+  width: 80px;
+  height: 80px;
+}
+
+#testimonials p {
+  color: #fff;
+
+}
+
+.text-name {
+  color: #fff;
+  font-weight: bold;
+  font-size: 150%
+
+}
+/* Contact */
+#contact {
+  padding: 5rem 0;
+}
+
+#contact h2{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 8rem;
+}
+
+#contact h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 3rem 0;
+  margin-top: 5rem;
+}
+
+#contact .form-box {
+  background: #fff;
+  padding: 3rem;
+  box-shadow: 2px 2px 5px #d1d1d1;
+  border-radius: 10px;
+}
+
+#contact .form-group {
+  margin-bottom: 2rem;
+}
+
+#contact .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.1rem;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.3rem;
+  padding: 1rem;
+  border: 0.5px solid #333;
+  border-radius: 5px;
+}
+
+#contact .form-box textarea {
+  font-family: Arial, sans-serif;
+}
+
+#contact .contact-btn {
+  width: 80%;
+  margin-left: 10%;
+  display: inline-block;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  background: #005DC9;
+  color: white;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contact .contact-btn:hover {
+  background: #03856f;
+
+}
+
+#contact .form-container {
+  position: relative;
+}
+
+#contact .mail-icon {
+  font-size: 4rem;
+  background: #000000;
+  color: #009688;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -7%;
+  left: 45%;
+
+}
+#contact .mail-icon:hover {
+  background: #000000;
+  color: #009688;
+}
+/* Footer */ 
+
+footer {
+  padding: 2.5rem;
+}
+
+footer p {
+  text-align: center;
+}
+      </style>
+    <!--JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- Local JS Fiel -->
+ <script>$('#navbar a, .btn').on('click', function(event) {
+  if(this.hash !== '') {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+      scrollTop: $(hash).offset().top - 80
+    },
+    800
+    );
+  }
+});</script>
+  </body>
+</html>
